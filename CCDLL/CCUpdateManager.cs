@@ -17,7 +17,6 @@ namespace CC.UpdateManager
         {
             get
             {
-
                 if (_ins) return _ins;
                 GameObject ccupdate = new GameObject("CCUpdateManager");
                 ((Object)ccupdate).hideFlags = HideFlags.HideInHierarchy;
