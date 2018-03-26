@@ -64,10 +64,11 @@ namespace CC.UpdateManager
                 FixedupdateList[FixedupdateList.IndexOf(call)] = null;
         }
 
+         // 之所以是从后向前遍历,是因为  从前向后遍历删除后索引值会不断变化
         void Update()
         {
             var num = UpdateList.Count;
-            for (int i = 0; i < num; ++i)
+            for (int i = num-1; i >=0; i--)
             {
                 if (UpdateList[i] != null)
                 {
@@ -76,16 +77,15 @@ namespace CC.UpdateManager
                 else
                 {
                     UpdateList.RemoveAt(i);
-                    i--;
-                    num--;
                 }
             }
 
         }
+        // 之所以是从后向前遍历,是因为  从前向后遍历删除后索引值会不断变化
         void FixedUpdate()
         {
             var num = FixedupdateList.Count;
-            for (int i = 0; i < num; ++i)
+            for (int i = num - 1; i >= 0; i--)
             {
                 if (FixedupdateList[i] != null)
                 {
@@ -94,8 +94,6 @@ namespace CC.UpdateManager
                 else
                 {
                     FixedupdateList.RemoveAt(i);
-                    i--;
-                    num--;
                 }
             }
 
