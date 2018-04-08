@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace CC.UpdateManager
 {
+    /// <summary>
+    /// CCUpdata管理类
+    /// </summary>
     public class CCUpdateManager : MonoBehaviour
     {
         private static readonly List<IUpdate> UpdateList = new List<IUpdate>();
