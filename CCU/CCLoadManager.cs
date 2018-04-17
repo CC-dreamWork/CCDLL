@@ -6,15 +6,15 @@ using UnityEngine;
 
 namespace CCU
 {
-    public class LoadManager
+    public class CCLoadManager
     {
-        private static LoadManager _ins;
+        private static CCLoadManager _ins;
 
-        public static LoadManager Ins
+        public static CCLoadManager Ins
         {
             get
             {
-                if(_ins==null) _ins=new LoadManager();
+                if(_ins==null) _ins=new CCLoadManager();
                 return _ins;
             }
         }

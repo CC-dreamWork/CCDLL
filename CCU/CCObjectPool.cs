@@ -21,7 +21,7 @@ namespace CCU
         /// </summary>
         public static T TakeOut<T>(string url) where T:Object
         {
-            T obj = LoadManager.Ins.Load<T>(url);
+            T obj = CCLoadManager.Ins.Load<T>(url);
             return obj;
         }
         /// <summary>

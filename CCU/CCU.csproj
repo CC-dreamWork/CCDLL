@@ -62,7 +62,7 @@
   <ItemGroup>
     <Compile Include="CCObjectPool.cs" />
     <Compile Include="CCStaticClass.cs" />
-    <Compile Include="LoadManager.cs" />
+    <Compile Include="CCLoadManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="U.cs" />
   </ItemGroup>
