@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCUI", "CCUI\CCUI.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCU", "CCU\CCU.csproj", "{D25E3F0B-203E-407D-80AF-973A07DC2CB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCAudioManager", "CCAudioManager\CCAudioManager.csproj", "{6C5F8F80-61D0-48D8-B4EA-8FB516413482}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D25E3F0B-203E-407D-80AF-973A07DC2CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D25E3F0B-203E-407D-80AF-973A07DC2CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D25E3F0B-203E-407D-80AF-973A07DC2CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C5F8F80-61D0-48D8-B4EA-8FB516413482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C5F8F80-61D0-48D8-B4EA-8FB516413482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C5F8F80-61D0-48D8-B4EA-8FB516413482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C5F8F80-61D0-48D8-B4EA-8FB516413482}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
