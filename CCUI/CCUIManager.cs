@@ -30,7 +30,7 @@ namespace CC.UI
         private GameObject UiParms(CCUiType ccuitype)
         {
             int type = (int) ccuitype;
-            GameObject go = _uiParams.ContainsKey(type)? _uiParams[type]: CCLoadManager.Ins.Load<GameObject>(_uiUrl[type]);
+            GameObject go = _uiParams.ContainsKey(type)? _uiParams[type]: Resources.Load<GameObject>(_uiUrl[type]);
             return go;
         }
 
