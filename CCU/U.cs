@@ -31,5 +31,36 @@ namespace CCU
             }
             return flag > 0;
         }
+
+        /// <summary>
+        /// 解决换行符失效问题
+        /// </summary>
+        /// <param name="sourceStr"></param>
+        /// <returns></returns>
+        public static string Unescape(string sourceStr)
+        {
+            return System.Text.RegularExpressions.Regex.Unescape(sourceStr);
+        }
+        /// <summary>
+        /// 解决换行符失效和空格自动换行问题
+        /// </summary>
+        /// <param name="sourceStr"></param>
+        /// <param name="space"></param>
+        /// <returns></returns>
+        public static string Unescape(string sourceStr, bool space)
+        {
+            return ReplaceSpace(System.Text.RegularExpressions.Regex.Unescape(sourceStr));
+        }
+        /// <summary>
+        /// 解决空格自动换行问题
+        /// </summary>
+        /// <param name="sourceStr"></param>
+        /// <returns></returns>
+        public static string ReplaceSpace(string sourceStr)
+        {
+            return sourceStr.Replace(" ", "<color=#00000000>.</color>");
+        }
     }
+
+
 }
