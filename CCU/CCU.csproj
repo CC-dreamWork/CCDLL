@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Excel">
+      <HintPath>..\Unitydll\Excel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -63,6 +66,7 @@
     <Compile Include="CCObjectPool.cs" />
     <Compile Include="CCStaticClass.cs" />
     <Compile Include="CCLoadManager.cs" />
+    <Compile Include="ExcelTool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="U.cs" />
   </ItemGroup>
