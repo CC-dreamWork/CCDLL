@@ -26,6 +26,7 @@ namespace CC.AudioManager
         {
             if (string.IsNullOrEmpty(url)) throw new Exception("错误：您输入的音频路径是空的");
             AudioClip audioClip = Resources.Load<AudioClip>(url);
+
             if (!audioClip) throw new Exception("错误:找不到路径 " + url + " 请检查路径是否存在!");
             return PlayPosition(audiopos, audioClip, rangeMax, volume, pitchmin, pitchmax);
         }
